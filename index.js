@@ -60,7 +60,7 @@ module.exports  = function (params, callback) {
         c: [{
           t: 'a',
           href: url + '\\' + getExternalFilePath(relativedest, file),
-          c: getExternalFilePath(relativedest, file)
+            c: file.data.title || file.basename || getExternalFilePath(relativedest, file)
         }]
     });
 
