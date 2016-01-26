@@ -88,8 +88,8 @@ assemble: {
 assemble: {
   blog: {
     options: {
-      plugins: ['grunt-assemble-sitemap'],
-      sitemap: {
+      plugins: ['grunt-assemble-html-sitemap'],
+      htmlSitemap: {
         homepage: 'http://assemble.io',
             exclude: ['50x', 'foo']
       }
@@ -107,6 +107,9 @@ assemble: {
 ./blog/sitemap.html
 ```
 
+## Roadmap
+- Use Layout tempalte from site
+- Check for page title
 
 ## Author
 
